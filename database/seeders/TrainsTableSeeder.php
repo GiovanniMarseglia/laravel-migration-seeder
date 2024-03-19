@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\train;
+use App\Models\Train;
 use Faker\Generator as Faker;
 
 class TrainsTableSeeder extends Seeder
@@ -14,7 +14,7 @@ class TrainsTableSeeder extends Seeder
      */
     public function run(Faker $faker){
         for($i = 0; $i < 10; $i++){
-            $newTrain= new train();
+            $newTrain= new Train();
             $newTrain->Azienda = $faker->word;
             $newTrain->Stazione_di_Partenza = $faker->city;
             $newTrain->Stazione_di_Arrivo = $faker->city;
